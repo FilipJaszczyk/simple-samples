@@ -1,0 +1,12 @@
+[Unit]
+Description=app1
+
+[Service]
+Type=simple
+Restart=always
+Requires=network-online.target
+RestartSec=2s
+ExecStart=/home/filip/apps/app1/app1
+
+[Install]
+WantedBy=multi-user.target
